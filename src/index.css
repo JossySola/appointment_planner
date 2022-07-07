@@ -1,3 +1,14 @@
+@media only screen and (max-device-width: 550px) and (orientation: portrait) {
+  input[type="submit"] {
+    width: 100% !important;
+  }
+
+  input,
+  select {
+    width: 100% !important;
+  }
+}
+
 #root {
   padding: 30px;
   font-family: "Open Sans", sans-serif;
