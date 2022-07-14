@@ -32,16 +32,16 @@ export default function App() {
       <nav>
         {// Link is part of React Router and is used to set hyperlinks (like an <a> element)
         }
-        <Link to='/contacts'>Contacts</Link>
-        <Link to='/appointments'>Appointments</Link>
+        <Link to='contacts'>Contacts</Link>
+        <Link to='appointments'>Appointments</Link>
       </nav>
         {// Routes nesting Route sets the element that has to be displayed in the specified path
         }
-      <Routes>
-        <Route path='contacts' element={<ContactsPage contacts={contacts} addContact={addContact} />} />
-        <Route path='appointments' element={<AppointmentsPage appointments={appointments} contacts={contacts} addAppointment={addAppointment} />} />
-      </Routes>
-      <Outlet />  
+        <Routes>
+          <Route path='contacts' element={<ContactsPage contacts={contacts} addContact={addContact} />} />
+          <Route path='appointments' element={<AppointmentsPage appointments={appointments} contacts={contacts} addAppointment={addAppointment} />} />
+        </Routes>
+      <Outlet />
     </div>
   )
 }

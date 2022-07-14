@@ -11,7 +11,10 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
     <Routes>
-      <Route path='*' element={<App />}></Route>
+      <Route path='appointment_planner' element={<App />}>
+        <Route path='contacts' />
+        <Route path='appointments' />
+      </Route>
     </Routes>
     </React.StrictMode>
   </BrowserRouter>
